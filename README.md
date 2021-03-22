@@ -34,4 +34,4 @@ debian@debian:~/Jgui/demo/client$ **gjs index.js**
 
 ---
 
-![ScreenShot](https://raw.githubusercontent.com/Sambrax/Jgui/main/screenshot.png)
+![ScreenShot](https://raw.githubusercontent.com/Renexo-git/Jgui/main/screenshot.png)
