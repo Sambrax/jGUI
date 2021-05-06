@@ -4,7 +4,7 @@
 
 Requirement: **GJS**
 
-##### _LINUX_
+#### _LINUX_
 
 **debian@debian:~$ su**
 
@@ -19,9 +19,23 @@ Download - [Jgui-master.zip](https://github.com/Renexo-git/Jgui/archive/refs/hea
 
 ### SERVER
 
-debian@debian:~$ **cd Jgui/demo/server**
+Leave the folder files: **Jgui-master/demo/server/** on a web server. (Apache, Lighttpd, Nginx...)
 
-debian@debian:~/Jgui/demo/server$ **php -S localhost:8000**
+You can run the built-in PHP or Python server to serve the files with the following command:
+
+_debian@debian:~$_ **cd Jgui-master/demo/server**
+
+**PHP**
+
+_debian@debian:~/Jgui-master/demo/server$_ **php -S localhost:8000**
+
+**Python**
+
+_debian@debian:~/Jgui-master/demo/server$_ **python -m SimpleHTTPServer 8000**
+
+**Python3**
+
+_debian@debian:~/Jgui-master/demo/server$_ **python3 -m http.server 8000**
 
 ---
 
