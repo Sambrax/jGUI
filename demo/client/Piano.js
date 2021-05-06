@@ -5,20 +5,20 @@ class Piano {
 
     main() {
         Jgui.url = "http://localhost:8000";
-        Jgui.include("/style.min.css"); // http://localhost:8000/style.min.css
-        Jgui.request("/", function (response) { // XML - http://localhost:8000/
+        Jgui.include("/style.min.css");
+        Jgui.request("/piano.xml", function (response) {
             /*
               XML structure object ID
               ---------------------------------------
-              File: piano.glade
+              File: piano.xml
               <object class="GtkWindow" id="window">
             */
             Jgui.builder(response, "window"); // id="window"
         });
     }
 
-    onDeleteWindow() {
-        Jgui.quit();
+    onDeleteWindow() { // onDeleteWindow is called by the XML file - piano.xml
+        Jgui.quit(); // Close the window
     }
 
     playSound(button) {
